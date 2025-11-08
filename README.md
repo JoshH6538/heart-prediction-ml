@@ -111,6 +111,67 @@ We will summarize findings, highlight effective prediction methods, and discuss 
 
 ---
 
+## Quick Start Guide
+
+This section explains how to set up and run the Heart Failure Prediction project in a clean Python virtual environment across **Windows**, **macOS**, and **Linux**.
+
+---
+
+### Create a Virtual Environment
+
+Create a virtual environment named `.venv` (recommended).  
+If you use a different name, be sure to add it to `.gitignore`
+
+#### Windows (PowerShell)
+
+```powershell
+cd path\to\project
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+#### macOS / Linux (Bash or Zsh)
+
+```bash
+cd path/to/project
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+---
+
+### Upgrade pip and install dependencies
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If you need to install Jupyter manually:
+
+```bash
+pip install notebook
+```
+
+---
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+---
+
+### Note for Git
+
+If your virtual environment is **not** named `.venv`, add the folder name to `.gitignore` to avoid committing large environment files:
+
+```
+venv/
+myenv/
+```
+
 ### References
 
 - **Heart Failure Prediction Dataset** - [Kaggle](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
